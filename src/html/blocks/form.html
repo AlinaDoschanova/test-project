@@ -1,0 +1,207 @@
+<div class="edit-form">
+    <div class="edit-form__inner">
+        <div class="edit-form__main-title">Редактирование подписки</div>
+        <form class="edit-form__form">
+            <fieldset class="edit-form__group">
+                <label class="edit-form__label" for="theme">Тема</label>
+                <div class="edit-form__field-wrapper">
+                    <select class="edit-form__field" id="theme">
+                        <option value="" selected>ИА тема</option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <label class="edit-form__label" for="textarea">
+                    <span>E-mail</span>
+                    <span>Можно ввести несколько email через запятую (не более 20)</span>
+                </label>
+                <textarea class="edit-form__textarea" id="textarea">n.a.kaliberda@gmail.com, alekshikari@gmail.com</textarea>
+            </fieldset>
+            <fieldset id="radio-group1" class="edit-form__group">
+                <div class="edit-form__radio-buttons">
+                    <div class="edit-form__label">Получать</div>
+                    <ul class="edit-form__messages-radio-list">
+                        <li class="edit-form__messages-radio-item">
+                            <label for="1" class="edit-form__messages-radio-wrap">
+                                <input checked="checked" type="radio" name="radio-group1" value="" id="1" class="edit-form__messages-radio-input">
+                                <span class="edit-form__messages-radio-name">Новые сообщения</span>
+                            </label>
+                        </li>
+                        <li class="edit-form__messages-radio-item">
+                            <label for="2" class="edit-form__messages-radio-wrap">
+                                <input type="radio" name="radio-group1" value="" id="2" class="edit-form__messages-radio-input">
+                                <span class="edit-form__messages-radio-name">Отчет</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="edit-form__row">
+                    <div class="edit-form__row-part">
+                        <label class="edit-form__label" for="select3">Периодичность</label>
+                        <div class="edit-form__field-wrapper">
+                            <select class="edit-form__field" id="select3">
+                                <option selected>Раз в месяц</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="edit-form__row-part">
+                        <div class="edit-form__label">Время получения (UTC+3)</div>
+                        <div class="edit-form__short-field-wrap">
+                            <div class="edit-form__field-wrapper">
+                                <label class="edit-form__field-wrap" for="select4">
+                                    <select id="select4" class="edit-form__field">
+                                        <option selected>16 ч.</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="edit-form__field-wrapper">
+                                <label class="edit-form__field-wrap" for="select5">
+                                    <select id="select5" class="edit-form__field">
+                                        <option selected>25 мин.</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset id="radio-group2" class="edit-form__group">
+                <div class="edit-form__fieldset-title">Формат</div>
+                <ul class="edit-form__docs-radio-list">
+                    <li class="edit-form__docs-radio-item">
+                        <label for="docs1" class="edit-form__docs-radio-wrap">
+                            <img class="edit-form__docs-radio-img" src="../../img/svgicons/excel.svg" alt="">
+                            <input checked="checked" type="radio" name="radio-group2" value="" id="docs1" class="edit-form__docs-radio-doc">
+                            <span class="edit-form__docs-radio-background"></span>
+                            <span class="edit-form__docs-radio-text">Excel</span>
+                        </label>
+                    </li>
+                    <li class="edit-form__docs-radio-item">
+                        <label for="docs2" class="edit-form__docs-radio-wrap">
+                            <img class="edit-form__docs-radio-img" src="../../img/svgicons/word.svg" alt="">
+                            <input type="radio" name="radio-group2" value="" id="docs2" class="edit-form__docs-radio-doc">
+                            <span class="edit-form__docs-radio-background"></span>
+                            <span class="edit-form__docs-radio-text">Word</span>
+                        </label>
+                    </li>
+                    <li class="edit-form__docs-radio-item">
+                        <label for="docs3" class="edit-form__docs-radio-wrap">
+                            <img class="edit-form__docs-radio-img" src="../../img/svgicons/pdf.svg" alt="">
+                            <input type="radio" name="radio-group2" value="" id="docs3" class="edit-form__docs-radio-doc">
+                            <span class="edit-form__docs-radio-background"></span>
+                            <span class="edit-form__docs-radio-text">Pdf</span>
+                        </label>
+                    </li>
+                </ul>
+                <div>
+                    <label for="field1">Заголовок</label>
+                    <input id="field1" class="edit-form__field edit-form__field_input" placeholder="Отчет">
+                </div>
+                <div>
+                    <label for="field2">Подзаголовок</label>
+                    <input id="field2" class="edit-form__field edit-form__field_input" placeholder="Анализ упоминаний в социальных медиа">
+                </div>
+            </fieldset>
+            <fieldset id="radio-group3" class="edit-form__group">
+                <div class="edit-form__fieldset-title">Фильтр данных для отчета</div>
+                <ul class="edit-form__filters-radio-list">
+                    <li class="edit-form__filters-radio-item">
+                        <input checked="checked" type="radio" name="radio-group3" value="" id="filter1" class="edit-form__filters-radio">
+                        <label for="filter1" class="edit-form__filters-radio-label">Вся тема</label>
+                    </li>
+                    <li class="edit-form__filters-radio-item">
+                        <input type="radio" name="radio-group3" value="" id="filter2" class="edit-form__filters-radio">
+                        <label for="filter2" class="edit-form__filters-radio-label">Выбранные теги</label>
+                    </li>
+                    <li class="edit-form__filters-radio-item">
+                        <input type="radio" name="radio-group3" value="" id="filter3" class="edit-form__filters-radio">
+                        <label for="filter3" class="edit-form__filters-radio-label">Выбранные персональные фильтры</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset id="radio-group4" class="edit-form__group">
+                <div class="edit-form__fieldset-title">Состав данных</div>
+                <ul class="edit-form__checkboxes-list">
+                    <li class="edit-form__checkboxes-item">
+                        <input id="check1" class="edit-form__checkboxes-input" type="checkbox" name="radio-group4">
+                        <label for="check1" class="edit-form__checkboxes-label">
+                            <span class="edit-form__checkboxes-name">Сводные данные</span>
+                        </label>
+                    </li>
+                    <li class="edit-form__checkboxes-item">
+                        <input id="check2" class="edit-form__checkboxes-input" type="checkbox" name="radio-group4">
+                        <label for="check2" class="edit-form__checkboxes-label">
+                            <span class="edit-form__checkboxes-name">Проверка создания персонального фильтра</span>
+                        </label>
+                    </li>
+                    <li class="edit-form__checkboxes-item">
+                        <input id="check3" class="edit-form__checkboxes-input" type="checkbox" name="radio-group4">
+                        <label for="check3" class="edit-form__checkboxes-label">
+                            <span class="edit-form__checkboxes-name">Тональность</span>
+                        </label>
+                    </li>
+                    <li class="edit-form__checkboxes-item">
+                        <input id="check4" class="edit-form__checkboxes-input" type="checkbox" name="radio-group4" checked="checked">
+                        <label for="check4" class="edit-form__checkboxes-label">
+                            <span class="edit-form__checkboxes-name">Проверка создания персонального фильтра</span>
+                        </label>
+                    </li>
+                    <li class="edit-form__checkboxes-item">
+                        <input id="check5" class="edit-form__checkboxes-input" type="checkbox" name="radio-group4">
+                        <label for="check5" class="edit-form__checkboxes-label">
+                            <span class="edit-form__checkboxes-name">География</span>
+                        </label>
+                    </li>
+                    <li class="edit-form__checkboxes-item">
+                        <input id="check6" class="edit-form__checkboxes-input" type="checkbox" name="radio-group4" checked="checked">
+                        <label for="check6" class="edit-form__checkboxes-label">
+                            <span class="edit-form__checkboxes-name">Теги</span>
+                        </label>
+                    </li>
+                    <li class="edit-form__checkboxes-item">
+                        <input id="check7" class="edit-form__checkboxes-input" type="checkbox" name="radio-group4">
+                        <label for="check7" class="edit-form__checkboxes-label">
+                            <span class="edit-form__checkboxes-name">Юридические лица</span>
+                        </label>
+                    </li>
+                    <li class="edit-form__checkboxes-item">
+                        <input id="check8" class="edit-form__checkboxes-input" type="checkbox" name="radio-group4">
+                        <label for="check8" class="edit-form__checkboxes-label">
+                            <span class="edit-form__checkboxes-name">Места</span>
+                        </label>
+                    </li>
+                    <li class="edit-form__checkboxes-item">
+                        <input id="check9" class="edit-form__checkboxes-input" type="checkbox" name="radio-group4">
+                        <label for="check9" class="edit-form__checkboxes-label">
+                            <span class="edit-form__checkboxes-name">Продукты</span>
+                        </label>
+                    </li>
+                </ul>
+                <div class="">
+                    <div class="edit-form__label">Язык</div>
+                    <ul class="edit-form__messages-radio-list">
+                        <li class="edit-form__messages-radio-item">
+                            <label for="lang1" class="edit-form__messages-radio-wrap">
+                                <input checked="checked" type="radio" name="radio-group4" value="" id="lang1" class="edit-form__messages-radio-input">
+                                <span class="edit-form__messages-radio-name edit-form__messages-radio-name_lang">Русский</span>
+                            </label>
+                        </li>
+                        <li class="edit-form__messages-radio-item">
+                            <label for="lang2" class="edit-form__messages-radio-wrap">
+                                <input type="radio" name="radio-group4" value="" id="lang2" class="edit-form__messages-radio-input">
+                                <span class="edit-form__messages-radio-name edit-form__messages-radio-name_lang">Английский</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <div class="edit-form__switch-wrapper">
+                <label class="edit-form__switch" for="switch1">
+                    <input type="checkbox" checked="" class="edit-form__switch-input" id="switch1">
+                    <div class="edit-form__slider"></div>
+                </label>
+                <span class="edit-form__switch-text">Подписка активна</span>
+            </div>
+            <button class="edit-form__btn">Сохранить изменения</button>
+        </form>
+    </div>
+</div>

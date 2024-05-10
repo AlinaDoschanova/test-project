@@ -1,0 +1,55 @@
+.header {
+	background-color: #323A44;
+	padding: 0 20px 11px;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__select-wrap {
+		position: relative;
+
+		&:before {
+			content: "";
+			background-image: url("../../img/svgicons/user.svg");
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 24px;
+			height: 24px;
+			background-repeat: no-repeat;
+			pointer-events: none;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 0;
+			display: block;
+			width: 10px;
+			height: 6px;
+			background-image: url("../../img/svgicons/arrow.svg");
+			background-repeat: no-repeat;
+			pointer-events: none;
+		}
+	}
+
+	&__select {
+		width: 46px;
+		height: 24px;
+		appearance: none;
+		border: none;
+		background-color: transparent;
+		outline: none;
+		cursor: pointer;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+}
