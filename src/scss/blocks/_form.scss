@@ -85,6 +85,8 @@
 
   &__docs-radio-doc {
     position: absolute;
+    top: 0;
+    left: 0;
     opacity: 0;
 
     &:checked ~ .edit-form__docs-radio-background {
@@ -170,7 +172,7 @@
     margin-bottom: var(--margin-botom);
   }
 
-  &__messages-radio-list {
+  &__round-radio-list {
     display: flex;
     gap: 32px;
     padding-left: 0;
@@ -182,28 +184,28 @@
     font-size: 12px;
   }
 
-  &__messages-radio-wrap {
+  &__round-radio-wrap {
     display: inline-block;
     position: relative;
     padding-left: 24px;
     font-weight: 400;
   }
 
-  &__messages-radio-input {
+  &__round-radio-input {
     position: absolute;
-    top: .7em;
+    top: 10px;
     left: 0;
     margin: 0;
     padding: 0;
     transform: translateY(-50%);
     opacity: 0;
 
-    &:checked ~ .edit-form__messages-radio-name:after {
+    &:checked ~ .edit-form__round-radio-name:after {
       opacity: 1;
     }
   }
 
-  &__messages-radio-name {
+  &__round-radio-name {
     &:before {
       content: '';
       position: absolute;
@@ -228,7 +230,7 @@
       transition: opacity .3s;
     }
 
-    &_lang {
+    &_donut {
       &:before {
         position: absolute;
         top: 2px;
@@ -323,6 +325,8 @@
 
   &__checkboxes-input {
     position: absolute;
+    top: 0;
+    left: 0;
     opacity: 0;
 
     &:checked ~ .edit-form__checkboxes-label {
