@@ -3,18 +3,22 @@
         <div class="edit-form__main-title">Редактирование подписки</div>
         <form class="edit-form__form">
             <fieldset class="edit-form__group">
-                <label class="edit-form__label" for="theme">Тема</label>
                 <div class="edit-form__field-wrapper">
-                    <select class="edit-form__field" id="theme">
-                        <option value="" selected>ИА тема</option>
-                        <option value=""></option>
-                    </select>
+                    <label class="edit-form__label" for="theme">Тема</label>
+                    <div class="edit-form__select-wrapper">
+                        <select class="edit-form__field" id="theme">
+                            <option value="" selected>ИА тема</option>
+                            <option value=""></option>
+                        </select>
+                    </div>
                 </div>
-                <label class="edit-form__label" for="textarea">
-                    <span>E-mail</span>
-                    <span>Можно ввести несколько email через запятую (не более 20)</span>
-                </label>
-                <textarea class="edit-form__textarea" id="textarea">n.a.kaliberda@gmail.com, alekshikari@gmail.com</textarea>
+                <div class="edit-form__field-wrapper">
+                    <label class="edit-form__label" for="textarea">
+                        <span>E-mail</span>
+                        <span>Можно ввести несколько email через запятую (не более 20)</span>
+                    </label>
+                    <textarea class="edit-form__textarea" id="textarea">n.a.kaliberda@gmail.com, alekshikari@gmail.com</textarea>
+                </div>
             </fieldset>
             <fieldset id="radio-group1" class="edit-form__group">
                 <div class="edit-form__radio-buttons">
@@ -37,7 +41,7 @@
                 <div class="edit-form__row">
                     <div class="edit-form__row-part">
                         <label class="edit-form__label" for="select3">Периодичность</label>
-                        <div class="edit-form__field-wrapper">
+                        <div class="edit-form__select-wrapper">
                             <select class="edit-form__field" id="select3">
                                 <option selected>Раз в месяц</option>
                             </select>
@@ -46,14 +50,14 @@
                     <div class="edit-form__row-part">
                         <div class="edit-form__label">Время получения (UTC+3)</div>
                         <div class="edit-form__short-field-wrap">
-                            <div class="edit-form__field-wrapper">
+                            <div class="edit-form__select-wrapper">
                                 <label class="edit-form__field-wrap" for="select4">
                                     <select id="select4" class="edit-form__field">
                                         <option selected>16 ч.</option>
                                     </select>
                                 </label>
                             </div>
-                            <div class="edit-form__field-wrapper">
+                            <div class="edit-form__select-wrapper">
                                 <label class="edit-form__field-wrap" for="select5">
                                     <select id="select5" class="edit-form__field">
                                         <option selected>25 мин.</option>
@@ -92,13 +96,15 @@
                         </label>
                     </li>
                 </ul>
-                <div>
-                    <label for="field1">Заголовок</label>
-                    <input id="field1" class="edit-form__field edit-form__field_input" placeholder="Отчет">
-                </div>
-                <div>
-                    <label for="field2">Подзаголовок</label>
-                    <input id="field2" class="edit-form__field edit-form__field_input" placeholder="Анализ упоминаний в социальных медиа">
+                <div class="edit-form__format-fields">
+                    <div class="edit-form__field-wrapper">
+                        <label for="field1" class="edit-form__label">Заголовок</label>
+                        <input id="field1" class="edit-form__field edit-form__field_input" placeholder="Отчет">
+                    </div>
+                    <div class="edit-form__field-wrapper">
+                        <label for="field2" class="edit-form__label">Подзаголовок</label>
+                        <input id="field2" class="edit-form__field edit-form__field_input" placeholder="Анализ упоминаний в социальных медиа">
+                    </div>
                 </div>
             </fieldset>
             <fieldset id="radio-group3" class="edit-form__group">
