@@ -2,6 +2,10 @@
 	background-color: #323A44;
 	padding: 0 20px 11px;
 
+	@media screen and (max-width: 960px) {
+		padding: 0 16px 11px;
+	}
+
 	&__row {
 		display: flex;
 		justify-content: space-between;
@@ -46,6 +50,7 @@
 		background-color: transparent;
 		outline: none;
 		cursor: pointer;
+		opacity: 0;
 
 		&:focus {
 			outline: none;

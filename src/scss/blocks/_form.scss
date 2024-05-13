@@ -2,12 +2,13 @@
 
   &__inner {
     margin: auto;
-    padding: 19px 0 69px;
+    padding: 19px 16px 69px;
     color: #979CA9;
     font-family: var(--font-main);
     font-size: 13px;
+    box-sizing: content-box;
 
-    @media screen and (min-width: 959px) {
+    @media screen and (min-width: 960px) {
       width: 772px;
     }
   }
@@ -70,6 +71,7 @@
 
   &__docs-radio-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
     margin-bottom: var(--margin-botom);
   }
@@ -122,6 +124,7 @@
 
   &__short-field-wrap {
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
   }
 
@@ -135,9 +138,13 @@
 
   &__row {
     display: flex;
-    gap: 12px;
+    flex-wrap: wrap;
     align-items: center;
-    width: 484px;
+    gap: 12px;
+
+    @media screen and (min-width: 960px) {
+      width: 484px;
+    }
 
     .edit-form__field {
       margin-bottom: 0;
@@ -154,6 +161,7 @@
 
   &__label {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 6px;
     font-size: 12px;
@@ -192,6 +200,7 @@
 
   &__round-radio-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 32px;
     padding-left: 0;
     list-style: none;
@@ -273,6 +282,7 @@
 
   &__filters-radio-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 4px;
   }
@@ -335,6 +345,11 @@
     gap: 18px;
     column-gap: 29px;
     margin-bottom: 24px;
+
+    @media screen and (max-width: 771px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &__checkboxes-item {
