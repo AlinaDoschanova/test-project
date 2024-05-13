@@ -12,8 +12,13 @@
 		align-items: center;
 	}
 
+	&__select-label {
+		display: block;
+	}
+
 	&__select-wrap {
 		position: relative;
+		height: 24px;
 		margin-bottom: -10px;
 
 		&:before {
